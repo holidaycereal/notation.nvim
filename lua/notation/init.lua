@@ -1,8 +1,8 @@
 local M = {}
 
-local palette = require("notation.palette")
-local highlight = require("notation.highlight")
-local mappings = require("notation.mappings")
+local palette = require("colors.notation.palette")
+local highlight = require("colors.notation.highlight")
+local mappings = require("colors.notation.mappings")
 
 local function get_color(color_name)
 	local color_list = palette[color_name]
