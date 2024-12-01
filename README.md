@@ -15,8 +15,12 @@ they have exactly the same mappings, just different palettes.
 
 ## installation & setup
 - via any plugin manager e.g. `lazy.nvim`, `Plug`
-- put this in `init.lua`: `require('notation')`
-- later in the file: `vim.cmd("colorscheme notation")`
+- put this in your `init.lua`:
+```lua
+require('notation')
+vim.o.background = "dark" -- or "light"
+vim.cmd("colorscheme notation")
+```
 
 if you like to switch dark/light mode a lot like me, you might want to do something similar to what i have:
 
