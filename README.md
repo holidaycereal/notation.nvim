@@ -1,8 +1,7 @@
 # notation.nvim
 
 neovim colorscheme inspired by physical media.
-![notation-blackboard](https://github.com/user-attachments/assets/5a16abb3-bcbc-4302-8b39-86a13f286043)
-![notation-ballpoint](https://github.com/user-attachments/assets/16b01210-22df-4522-bec6-0b5367f13401)
+![notation](https://github.com/user-attachments/assets/90036469-a095-4143-a2bc-dcca2f2b0704)
 
 i originally made it out of the desparation that there were no light colorschemes that fit my very specific preferences. once i had perfected it, i realised i would never be satisfied without a dark mode equivalent.
 
