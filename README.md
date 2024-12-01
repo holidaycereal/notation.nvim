@@ -2,7 +2,7 @@
 
 neovim colorscheme inspired by physical media.
 
-![notation-ss](https://github.com/user-attachments/assets/73852601-50fb-4956-9095-66c6ebec4059)
+![notation-ss](https://github.com/user-attachments/assets/0586c150-9a2f-4670-ab99-d0ba9448c024)
 
 i originally made it out of the desparation that there were no light colorschemes that fit my very specific preferences. once i had perfected it, i realised i would never be satisfied without a dark mode equivalent.
 
