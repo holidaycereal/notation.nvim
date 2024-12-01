@@ -4,7 +4,9 @@ neovim colorscheme inspired by physical media.
 
 ![notation-ss](https://github.com/user-attachments/assets/8a7eec92-d750-43f3-b96c-841e216961a3)
 
-there are two variants: `notation-blackboard` (dark mode) and `notation-ballpoint` (light mode.) they have exactly the same mappings, just different palettes.
+there are two variants: `notation-blackboard` (dark mode) and `notation-ballpoint` (light mode.)
+
+they have exactly the same mappings, just different palettes.
 
 ## features
 - the variant to use is determined by the value of `background` (`dark` or `light`)
@@ -12,11 +14,11 @@ there are two variants: `notation-blackboard` (dark mode) and `notation-ballpoin
 - exactly enough information to keep in your brain at once
 
 ## installation & setup
-- via any plugin manager e.g. lazy.nvim, Plug
-- put this in `init.lua`: `require('notation')` (or put it inside a lua block if you use `init.vim`)
+- via any plugin manager e.g. `lazy.nvim`, `Plug`
+- put this in `init.lua`: `require('notation')`
 - later in the file: `vim.cmd("colorscheme notation")`
 
-actually, if you like to switch dark/light mode a lot like me, you might want to do something similar to what i have:
+if you like to switch dark/light mode a lot like me, you might want to do something similar to what i have:
 
 ```lua
 function theme_from_gtk()
