@@ -19,32 +19,33 @@ so now there are two variants: `notation-blackboard` (dark mode version) and `no
 
 actually, if you like to switch dark/light mode a lot like me, you might want to do something similar to what i have:
 
-```
+```lua
 function theme_from_gtk()
-	local handle = io.popen("gsettings get org.gnome.desktop.interface color-scheme")
-	local result = handle:read("*a")
-	handle:close()
+  local handle = io.popen("gsettings get org.gnome.desktop.interface color-scheme")
+  local result = handle:read("*a")
+  handle:close()
 
-	if result:find("dark") then
-		vim.o.background = "dark"
-	else
-		vim.o.background = "light"
-	end
-	vim.cmd("colorscheme notation")
+  if result:find("dark") then
+    vim.o.background = "dark"
+  else
+    vim.o.background = "light"
+  end
+  vim.cmd("colorscheme notation")
 end
 ```
 
 then call `theme_from_gtk` in autocmds or keymaps, for example:
 
-```
+```lua
 -- Initial check
 theme_from_gtk()
 
 -- Check when focus gained or lost, and on write
 vim.api.nvim_create_autocmd({ "FocusGained", "FocusLost", "BufWrite" }, {
-	callback = theme_from_gtk
+  callback = theme_from_gtk
 })
 
 -- Bind to L
 vim.keymap.set('n', 'L', '<Cmd>lua theme_from_gtk()<CR>')
 ```
+ 
