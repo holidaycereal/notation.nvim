@@ -1,20 +1,20 @@
 local M = {}
 
-local palette = require('palette')
-local highlight = require('highlight')
-local mappings = require('mappings')
-
-local function get_color(color_name)
-	local color_list = palette[color_name]
-	local index = vim.o.background == "dark" and 1 or 2
-	return color_list[index] or color_list[1]
-end
-
 function M.load()
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
 	vim.o.background = vim.o.background or "dark"
 	vim.g.colors_name = vim.o.background == "dark" and "notation-blackboard" or "notation-ballpoint"
+
+	local palette = require('palette')
+	local highlight = require('highlight')
+	local mappings = require('mappings')
+
+	local function get_color(color_name)
+		local color_list = palette[color_name]
+		local index = vim.o.background == "dark" and 1 or 2
+		return color_list[index] or color_list[1]
+	end
 
 	for group, property in pairs(highlight) do
 		local hl = {}
@@ -34,3 +34,5 @@ function M.load()
 		end
 	end
 end
+
+return M
