@@ -6,7 +6,9 @@ neovim colorscheme inspired by physical media.
 
 my original motivation to make it was the desparation that there were no light colorschemes that fit my very specific preferences. once i had written and perfected it, i realised i would never be satisfied without a dark mode equivalent.
 
-so now there are two variants: `notation-blackboard` (dark mode version) and `notation-ballpoint` (original light mode version.) they have exactly the same mappings, just different palettes. `blackboard` has a green-tinted black background and a warm "chalky" white foreground. the goal was to make it easy to imagine you're a lecturer, illustrating complex ideas. i have tried to make the darker colors look like wet chalk, i hope that comes across. the `ballpoint` colors are supposed to look like cheap pen ink dried onto printer paper, office vibes. comments are written with an HB pencil. i want to ramble on forever about the color choices but this is already far more than enough.
+so now there are two variants: `notation-blackboard` (dark mode version) and `notation-ballpoint` (original light mode version.) they have exactly the same mappings, just different palettes.
+
+`blackboard` has a green-tinted black background and a warm "chalky" white foreground. the goal was to make it easy to imagine you're a lecturer, illustrating complex ideas. i have tried to make the darker colors look like wet chalk, i hope that comes across. the `ballpoint` colors are supposed to look like cheap pen ink dried onto printer paper, office vibes. comments are written with an HB pencil. i want to ramble on forever about the color choices but this is already far more than enough.
 
 ## features
 - the variant to use is determined by the value of `background` (`dark` or `light`)
