@@ -23,7 +23,7 @@ return {
 	markup_underline = { "Underlined", "DiffText", "@markup.underline" },
 	markup_list = { "@markup.list", "@markup.list.checked", "@markup.list.unchecked" },
 	markup_headings = { "@markup.heading", "@markup.heading.1", "@markup.heading.2", "@markup.heading.3", "@markup.heading.4", "@markup.heading.5", "@markup.heading.6" },
-	markup_raw = { "@markup.quote", "@markup.math", "@markup.raw", "@markup.raw.block" },
+	markup_raw = { "@markup.quote", "@markup.math", "@markup.raw", "@markup.raw.block", "@label.markdown" },
 	markup_links = { "@markup.link", "@markup.link.label", "@markup.link.url" },
 	xml_attributes = { "@tag.attribute" },
 	xml_tags = { "@tag", "@tag.builtin" },
