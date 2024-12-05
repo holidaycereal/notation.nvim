@@ -22,7 +22,7 @@ return {
 	markup_underline = { underline = true },
 	markup_list = { fg = "blue" },
 	markup_headings = { fg = "blue", bold = true },
-	markup_raw = { fg = "red" },
+	markup_raw = { fg = "green" },
 	markup_links = { underline = true },
 	xml_attributes = { fg = "fg" },
 	xml_tags = { fg = "blue" },
