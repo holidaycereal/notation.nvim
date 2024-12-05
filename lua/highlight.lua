@@ -21,7 +21,7 @@ return {
 	markup_italic = { italic = true },
 	markup_underline = { underline = true },
 	markup_list = { fg = "blue" },
-	markup_headings = { fg = "blue", bold = true },
+	markup_headings = { bold = true },
 	markup_raw = { fg = "green" },
 	markup_links = { underline = true },
 	xml_attributes = { fg = "fg" },
