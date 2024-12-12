@@ -5,7 +5,8 @@ return {
 	-- Syntax
 	keywords = { "Statement", "Conditional", "Repeat", "Keyword", "Exception", "@keyword", "@keyword.coroutine", "@keyword.function", "@keyword.operator", "@keyword.type", "@keyword.modifier", "@keyword.repeat", "@keyword.return", "@keyword.debug", "@keyword.exception", "@keyword.conditional", "@keyword.conditional.ternary", "@property.css" },
 	directives = { "PreProc", "Include", "Define", "Macro", "PreCondit", "@keyword.directive", "@keyword.directive.define", "@keyword.import", "@function.macro" },
-	types = { "Type", "StorageClass", "Structure", "Typedef", "@type", "@type.builtin", "@type.definition", "@module", "@module.builtin", "@tag.css" },
+	modules = { "@module", "@module.builtin" },
+	types = { "Type", "StorageClass", "Structure", "Typedef", "@type", "@type.builtin", "@type.definition", "@tag.css" },
 	values = { "Number", "Float", "Boolean", "@constant.builtin", "@boolean", "@number", "@number.float" },
 	constants = { "Constant", "@constant", "@constant.macro" },
 	strings = { "String", "Character", "@string", "@character", "@string.documentation", "@string.regexp", "@string.escape", "@string.special", "@string.special.symbol", "@string.special.path", "@string.special.url" },
