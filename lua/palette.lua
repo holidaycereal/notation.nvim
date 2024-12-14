@@ -13,7 +13,7 @@ return {
 	green         = { "#9bcdb0", "#30773d" },
 	cyan          = { "#60d3d3", "#007474" },
 	blue          = { "#60b3d3", "#005490" },
-	indigo        = { "#728fce", "#183490" },
+	indigo        = { "#7cacff", "#183490" },
 	magenta       = { "#d5a6c6", "#a626a4" },
 
 	bright_red    = { "#ee5b41", "#e60000" },
