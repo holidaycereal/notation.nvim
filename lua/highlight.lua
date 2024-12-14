@@ -46,6 +46,6 @@ return {
 	cursor_line_nr = { fg = "grey_4", bg = "grey_1" },
 	active = { reverse = true },
 	inactive = { fg = "grey_5", bg = "grey_2" },
-	p_menu = { fg = "grey_3", bg = "grey_5" },
+	p_menu = { fg = "grey_2", bg = "grey_5" },
 	p_menu_sel = { fg = "bg", bg = "grey_4" },
 }
