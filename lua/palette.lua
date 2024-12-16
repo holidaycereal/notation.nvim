@@ -8,7 +8,7 @@ return {
 	grey_4        = { "#606660", "#a9abad" },
 	grey_5        = { "#737770", "#888a8c" },
 
-	red           = { "#ff6868", "#bc0000" },
+	red           = { "#f67868", "#ac0010" },
 	orange        = { "#e4af84", "#b75501" },
 	green         = { "#9bcdb0", "#30773d" },
 	cyan          = { "#60d3d3", "#007474" },
@@ -16,9 +16,9 @@ return {
 	indigo        = { "#9cbcff", "#183490" },
 	magenta       = { "#d5a6c6", "#a626a4" },
 
-	bright_red    = { "#ee5b41", "#e60000" },
-	bright_orange = { "#ffba5b", "#e06400" },
-	bright_green  = { "#54b254", "#32cc32" },
+	bright_red    = { "#ee5b41", "#f00000" },
+	bright_orange = { "#ffba5b", "#e87400" },
+	bright_green  = { "#54bf54", "#32b232" },
 
 	dim_red       = { "#9c3020", "#ffc0b9" },
 	dim_green     = { "#2e642a", "#b3f6c0" },
