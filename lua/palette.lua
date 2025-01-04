@@ -9,12 +9,12 @@ return {
 	grey_5        = { "#737770", "#888a8c" },
 
 	red           = { "#f67868", "#ac0010" },
-	orange        = { "#e4af84", "#b75501" },
+	orange        = { "#f4bf94", "#b75501" },
 	green         = { "#9bcdb0", "#30773d" },
 	cyan          = { "#60d3d3", "#007474" },
 	blue          = { "#60b3d3", "#005490" },
 	indigo        = { "#9cbcff", "#183490" },
-	magenta       = { "#d5a6c6", "#a626a4" },
+	magenta       = { "#d096c6", "#a626a4" },
 
 	bright_red    = { "#ee5b41", "#f00000" },
 	bright_orange = { "#ffba5b", "#e87400" },
