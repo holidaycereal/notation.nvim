@@ -1,1 +1,1 @@
-require('notation').load()
+require('notation').setup({})

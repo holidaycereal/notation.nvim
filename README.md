@@ -18,15 +18,12 @@ they have exactly the same mappings, just different palettes.
 2. put this in your `init.lua`:
 ```lua
 vim.o.background = "dark" -- or "light"
-local notation = require('notation')
-
-notation.custom = {
+require("notation").setup({
   -- add your custom highlights here, for example:
   comments = { italic = true },
   keywords = { fg = "red", bold = true },
   -- you can find the highlight group names in lua/highlight.lua
-}
-
+})
 vim.cmd("colorscheme notation")
 ```
 

@@ -1,8 +1,6 @@
 local M = {}
 
-local custom = {}
-
-function M.load()
+function M.setup(config)
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
 	vim.o.background = vim.o.background or "dark"
@@ -28,7 +26,7 @@ function M.load()
 	end
 
 	-- Custom config
-	for group, property in pairs(custom) do
+	for group, property in pairs(config) do
 		local hl = {}
 		for key, value in pairs(property) do
 			hl[key] = type(value) == "string" and get_color(value) or value
