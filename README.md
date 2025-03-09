@@ -23,6 +23,7 @@ require("notation").setup({
   comments = { italic = true },
   keywords = { fg = "red", bold = true },
   -- you can find the highlight group names in lua/highlight.lua
+  -- and the color values in lua/palette.lua
 })
 vim.cmd("colorscheme notation")
 ```
