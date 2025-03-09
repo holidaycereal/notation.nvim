@@ -14,11 +14,18 @@ they have exactly the same mappings, just different palettes.
 - exactly enough information to keep in your brain at once
 
 ## installation & setup
-- via any plugin manager e.g. `lazy.nvim`, `Plug`
-- put this in your `init.lua`:
+1. install via any plugin manager e.g. `lazy.nvim`, `Plug`
+2. put this in your `init.lua`:
 ```lua
-require('notation')
 vim.o.background = "dark" -- or "light"
+local notation = require('notation')
+
+notation.custom = {
+  -- add your custom highlights here, for example:
+  Comment = { italic = true },
+  Keyword = { fg = "red", bold = true },
+}
+
 vim.cmd("colorscheme notation")
 ```
 

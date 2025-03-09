@@ -1,5 +1,7 @@
 local M = {}
 
+M.config = {}
+
 function M.load()
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
@@ -23,15 +25,30 @@ function M.load()
 		end
 		vim.api.nvim_set_hl(0, group, hl)
 	end
+
 	vim.api.nvim_set_hl(0, "Normal", {
 		fg = get_color("fg"),
-		bg = get_color("bg")
+		bg = get_color("bg"),
 	})
 
+	-- Apply defaults
 	for custom_group, target_group_list in pairs(mappings) do
 		for _, target_group in ipairs(target_group_list) do
 			vim.api.nvim_set_hl(0, target_group, { link = custom_group })
 		end
+	end
+
+	-- Apply configured highlights
+	for group, settings in pairs(M.config) do
+		local hl = {}
+		for key, value in pairs(settings) do
+			if type(value) == "string" and palette[value] then
+				hl[key] = get_color(value)
+			else
+				hl[key] = value
+			end
+		end
+		vim.api.nvim_set_hl(0, group, hl)
 	end
 end
 
