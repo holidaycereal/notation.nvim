@@ -22,8 +22,9 @@ local notation = require('notation')
 
 notation.custom = {
   -- add your custom highlights here, for example:
-  Comment = { italic = true },
-  Keyword = { fg = "red", bold = true },
+  comments = { italic = true },
+  keywords = { fg = "red", bold = true },
+  -- you can find the highlight group names in lua/highlight.lua
 }
 
 vim.cmd("colorscheme notation")

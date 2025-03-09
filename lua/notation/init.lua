@@ -1,6 +1,6 @@
 local M = {}
 
-M.config = {}
+local custom = {}
 
 function M.load()
 	vim.cmd("hi clear")
@@ -18,7 +18,17 @@ function M.load()
 		return color_list[index] or color_list[1]
 	end
 
+	-- Defaults
 	for group, property in pairs(highlight) do
+		local hl = {}
+		for key, value in pairs(property) do
+			hl[key] = type(value) == "string" and get_color(value) or value
+		end
+		vim.api.nvim_set_hl(0, group, hl)
+	end
+
+	-- Custom config
+	for group, property in pairs(custom) do
 		local hl = {}
 		for key, value in pairs(property) do
 			hl[key] = type(value) == "string" and get_color(value) or value
@@ -31,24 +41,10 @@ function M.load()
 		bg = get_color("bg"),
 	})
 
-	-- Apply defaults
-	for custom_group, target_group_list in pairs(mappings) do
+	for notation_group, target_group_list in pairs(mappings) do
 		for _, target_group in ipairs(target_group_list) do
-			vim.api.nvim_set_hl(0, target_group, { link = custom_group })
+			vim.api.nvim_set_hl(0, target_group, { link = notation_group })
 		end
-	end
-
-	-- Apply configured highlights
-	for group, settings in pairs(M.config) do
-		local hl = {}
-		for key, value in pairs(settings) do
-			if type(value) == "string" and palette[value] then
-				hl[key] = get_color(value)
-			else
-				hl[key] = value
-			end
-		end
-		vim.api.nvim_set_hl(0, group, hl)
 	end
 end
 
