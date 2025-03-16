@@ -5,7 +5,7 @@ return {
 	-- Syntax
 	keywords = { fg = "blue" },
 	directives = { fg = "blue" },
-	modules = { fg = "red" },
+	modules = { fg = "orange" },
 	types = { fg = "magenta" },
 	constants = { fg = "orange" },
 	values = { fg = "orange" },
