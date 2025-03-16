@@ -2,9 +2,11 @@
 
 neovim colorscheme inspired by physical media.
 
-![notation-ss](https://github.com/user-attachments/assets/8a7eec92-d750-43f3-b96c-841e216961a3)
+there are two variants:
 
-there are two variants: `notation-blackboard` (dark mode) and `notation-ballpoint` (light mode.)
+| `notation-blackboard` | `notation-ballpoint` |
+| --------------------- | -------------------- |
+| ![notation-blackboard-demo](https://github.com/user-attachments/assets/67188bcc-4fc8-4c80-ac48-c0ce6bc916bc) | ![notation-ballpoint-demo](https://github.com/user-attachments/assets/f8d631e2-0014-46c2-b8b6-b0c8d1fdc9ad) |
 
 they have exactly the same mappings, just different palettes.
 
