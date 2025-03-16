@@ -15,16 +15,8 @@ they have exactly the same mappings, just different palettes.
 
 ## installation & setup
 1. install via any plugin manager e.g. `lazy.nvim`, `Plug`
-2. put this in your `init.lua`:
+2. put this in `init.lua`:
 ```lua
-vim.o.background = "dark" -- or "light"
-require("notation").setup({
-  -- add your custom highlights here, for example:
-  comments = { italic = true },
-  keywords = { fg = "red", bold = true },
-  -- you can find the highlight group names in lua/highlight.lua
-  -- and the color values in lua/palette.lua
-})
 vim.cmd("colorscheme notation")
 ```
 
