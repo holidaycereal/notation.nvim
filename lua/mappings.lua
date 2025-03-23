@@ -1,5 +1,5 @@
 return {
-	text = { "@property", "NormalNC", "NormalFloat", "FloatBorder", "Special", "SpecialChar", "FloatTitle", "FloatFooter", "@string.css", "@number.css" },
+	text = { "@property", "NormalNC", "NormalFloat", "FloatBorder", "Special", "SpecialChar", "FloatTitle", "FloatFooter", "@string.css", "@number.css", "@attribute.rust" },
 	non_text = { "@conceal", "Conceal", "Ignore", "TabLineFill", "NonText", "SpecialKey", "Whitespace", "FoldColumn", "SignColumn", "CursorLineFold", "CursorLineSign", "EndOfBuffer" },
 
 	-- Syntax
