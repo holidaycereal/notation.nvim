@@ -13,7 +13,7 @@ return {
 	variables = { fg = "fg" },
 	variables_builtin = { fg = "fg", italic = true },
 	functions = { fg = "fg" },
-	operators = { fg = "blue" },
+	operators = { fg = "fg" },
 	punctuation = { fg = "fg" },
 	comments = { fg = "grey_5" },
 	annotations = { fg = "red" },
